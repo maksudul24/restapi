@@ -37,10 +37,10 @@ public class StudentsController  {
   }
   
   @RequestMapping(value = "/", method = RequestMethod.POST)
-  public Students createStudent(@Valid @RequestBody Students students) {
-    students.set_id(ObjectId.get());
-    repository.save(students);
-    return students;
+  public Students createStudent(@Valid @RequestBody Students stud) {
+    stud.set_id(ObjectId.get());
+    repository.save(stud);
+    return stud;
   }
   
   @RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
