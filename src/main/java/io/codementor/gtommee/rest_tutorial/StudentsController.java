@@ -15,7 +15,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/Regular_Students")
+@RequestMapping("/students")
 public class StudentsController  {
   @Autowired
   private StudentsRepositories repository;
